@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Investigate Rewe Score</title>
+    <meta charset="UTF-8">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <h1> Enter Ingredients | Build the recipe </h1>
+      <div>
+        <form action="" target="" method="" class="root-form">
+        <div class="recipe-form-element">
+          <label for="amount">Menge eingeben:</label>
+          <input type="text" name="amount" id="amount" autofocus required>
+        </div>
+        <div class="recipe-form-element">
+          <label for="unit">Einheit eingeben:</label>
+          <!-- <input type="" name="unit" id="unit" required> -->
+          <select name="unit" id="unit" required>
+            <option value="g">gramm</option>
+            <option value="ml">milliliter</option>
+            <option value="st">stück</option>
+            <option value="el">esslöffel</option>
+            <option value="tl">teelöffel</option>
+          </select>
+        </div>
+        <div class="recipe-form-element">
+          <label for="ingredient">Zutate auswählen/eingeben:</label>
+          <input type="text" name="ingredient" id="ingredient" required>
+        </div>
+        <div class="recipe-form-element">
+          <button id="submit-ingredient">Zutat einloggen</button>
+        </div>
+        </form>
+      </div>
+      <div>
+        <h2>Current recipe</h2>
+        <table id="current-recipe-display">
+          <thead>
+            <tr>
+              <th>Menge | Einheit | Zutat</th>
+              <!-- is expandable depend on the ingredient field -->
+            </tr>
+          </thead>
+          <tbody>
+              <!-- create a new tr for every recipe/ valid click -->
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <button id="submit-recipe">Rezept hinzufügen</button>
+      </div>
+      <div>
+        <table id="all-recipes">
+        </table>
+      </div>
+      <div>
+        <button id="download-recipes">Rezepte herunterladen</button>
+      </div>
+  </body>
+</html>
